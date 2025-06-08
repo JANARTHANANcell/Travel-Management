@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel - Travel Management</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="center-box admin-panel-box">
+    <img src="logo.png" alt="Logo" class="admin-logo">
+    <h1>Admin Panel</h1>
+    <div class="admin-tabs">
+      <button id="usersTab" class="active">Users</button>
+      <button id="bookingsTab">Bookings</button>
+      <button id="adminLogoutBtn" style="float:right;background:#ff6a00;margin-left:25px;">Logout</button>
+    </div>
+    <div id="usersSection">
+      <h2>All Users</h2>
+      <table id="usersTable">
+        <thead><tr><th>ID</th><th>Name</th><th>Email</th><th>Joined</th><th>Status</th><th>Actions</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div id="bookingsSection" style="display:none">
+      <h2>All Bookings</h2>
+      <table id="bookingsTable">
+        <thead><tr><th>ID</th><th>User ID</th><th>Place ID</th><th>Package ID</th><th>Members</th><th>From</th><th>To</th><th>Actions</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div id="adminPopup" class="popup"></div>
+  </div>
+  <script src="admin.js"></script>
+</body>
+</html>
