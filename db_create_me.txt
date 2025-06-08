@@ -1,0 +1,1 @@
+Please create a folder named 'db' in this directory. The system cannot create it automatically. Once created, the schema.sql file will be generated for your travel management project.
